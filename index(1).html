@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070d1c">
+<title>Project K</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg"></canvas><div class="haze"></div><canvas id="fx"></canvas>
+<header id="top"><div id="dots"><i></i><i></i><i></i><i></i></div><button id="snd">♪ music</button></header>
+
+<main>
+<section class="scr" id="s0"><div class="w">
+  <div id="k" class="serif"><b>K</b></div>
+  <h1 class="serif" id="t0"></h1>
+  <p class="sub">A signal reached us from deep in the night sky. It only opens for one person.</p>
+  <button class="btn" id="go0">Receive signal</button>
+</div></section>
+
+<section class="scr" id="s1"><div class="w">
+  <h2 class="serif">Crack the code</h2>
+  <p class="sub" id="qq"></p>
+  <div id="lock"></div>
+  <p id="fb"></p>
+  <button class="btn" id="try">Try this code</button>
+  <button class="btn" id="go1" hidden>Open the envelope</button>
+</div></section>
+
+<section class="scr" id="s2"><div class="w">
+  <h2 class="serif" id="lh">A letter, sealed</h2>
+  <div id="env"><div class="flap"></div><div class="seal serif">K</div></div>
+  <p class="sub" id="lhint">Tap the envelope.</p>
+  <div id="paper" hidden></div>
+  <button class="btn" id="go2" hidden>Make a wish</button>
+</div></section>
+
+<section class="scr" id="s3"><div class="w">
+  <h2 class="serif" id="wh">Make a wish</h2>
+  <p class="sub" id="wsub">Write it in your own words. Only the stars will keep it.</p>
+  <textarea id="wish" maxlength="140" placeholder="I wish..."></textarea>
+  <div id="wc">0 / 140</div>
+  <button class="btn" id="launch">Launch wish</button>
+  <p class="sub" id="wsaved"></p>
+  <div id="end" hidden>
+    <p class="sub serif" id="endmsg"></p>
+    <button class="btn ghost" id="again">Replay from the start</button>
+  </div>
+</div></section>
+</main>
+<div id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
